@@ -20,23 +20,30 @@ Inside your `.eslintrc` file, pass this resolver to `eslint-plugin-import`:
 }
 ```
 
-And see [babel-plugin-root-import][babel-plugin-root-import] to know how to configure
-your prefix/suffix.
-
-### Example
+And your `.babelrc` file look like this:
 
 ```json
 {
-  "extends": "airbnb",
-  "rules": {},
-  "settings": {
-    "import/resolver": {
-        "babel-plugin-root-import": {
-            "rootPathSuffix": "src",
-            "rootPathPrefix": "~"
-        }
-    }
-  }
+    "presets": ["latest", "react", "stage-0"],
+    "plugins": [
+        ["import", {
+            "libraryName": "antd",
+            "style": false
+        }],
+        "transform-runtime",
+        [
+            "babel-plugin-root-import", [{
+                "rootPathPrefix": "~",
+                "rootPathSuffix": "app/components"
+            }, {
+                "rootPathPrefix": "$",
+                "rootPathSuffix": "app"
+            }, {
+                "rootPathPrefix": "#",
+                "rootPathSuffix": "lib"
+            }]
+        ]
+    ]
 }
 ```
 
