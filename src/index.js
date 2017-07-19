@@ -5,7 +5,7 @@ const JSON5 = require('json5');
 const nodeResolve = require('eslint-import-resolver-node').resolve;
 
 /* eslint-disable no-console */
-const babelRootImport = require('babel-root-import/build/helper.js');
+const babelRootImport = require('babel-plugin-root-import/build/helper.js');
 
 // newer version of babel root import exports the 2 functions
 // but older versions exported a class
@@ -33,7 +33,7 @@ function getConfigFromBabel(start, babelrc = '.babelrc') {
     const babelConfig = packageJSON.babel;
     if (babelConfig) {
         const pluginConfig = babelConfig.plugins.find(p => (
-            p[0] === 'babel-root-import'
+            p[0] === 'babel-plugin-root-import'
         ));
         process.chdir(path.dirname(packageJSONPath));
         return pluginConfig[1];
@@ -44,7 +44,7 @@ function getConfigFromBabel(start, babelrc = '.babelrc') {
         const babelrcJson = JSON5.parse(fs.readFileSync(babelrcPath, 'utf8'));
         if (babelrcJson && Array.isArray(babelrcJson.plugins)) {
             const pluginConfig = babelrcJson.plugins.find(p => (
-                p[0] === 'babel-root-import'
+                p[0] === 'babel-plugin-root-import'
             ));
             // The src path inside babelrc are from the root so we have
             // to change the working directory for the same directory

@@ -1,5 +1,5 @@
 {
-  "name": "eslint-import-resolver-babel-root-import",
+  "name": "eslint-import-resolver-babel-plugin-root-import",
   "version": "0.0.3",
   "main": "src/index.js",
   "description": "babel-plugin-root-import resolver for eslint-plugin-import",
@@ -26,7 +26,7 @@
     "babel",
     "babel-plugin",
     "module",
-    "babel-root-import",
+    "babel-plugin-root-import",
     "rewrite",
     "resolve",
     "rename",
@@ -35,7 +35,7 @@
     "import"
   ],
   "dependencies": {
-    "babel-root-import": "^3.2.2",
+    "babel-plugin-root-import": "^5.1.0",
     "eslint-import-resolver-node": "^0.2.1",
     "json5": "^0.5.0"
   },

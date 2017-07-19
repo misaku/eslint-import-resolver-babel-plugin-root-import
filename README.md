@@ -1,12 +1,14 @@
-# eslint-import-resolver-babel-root-import
+# eslint-import-resolver-babel-plugin-root-import
 
-A [babel-root-import](https://github.com/michaelzoidl/babel-root-import)
+This project fork from [olalonde/eslint-import-resolver-babel-root-import](https://github.com/olalonde/eslint-import-resolver-babel-root-import)
+
+A [babel-plugin-root-import](https://github.com/entwicklerstube/babel-plugin-root-import)
 resolver for [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import).
 
 ## Installation
 
 ```sh
-npm install --save-dev eslint-plugin-import eslint-import-resolver-babel-root-import
+npm install --save-dev eslint-plugin-import eslint-import-resolver-babel-plugin-root-import
 ```
 
 ## Usage
@@ -14,11 +16,11 @@ npm install --save-dev eslint-plugin-import eslint-import-resolver-babel-root-im
 Inside your `.eslintrc` file, pass this resolver to `eslint-plugin-import`:
 ```
 "settings": {
-  "import/resolver": "babel-root-import"
+  "import/resolver": "babel-plugin-root-import"
 }
 ```
 
-And see [babel-root-import][babel-root-import] to know how to configure
+And see [babel-plugin-root-import][babel-plugin-root-import] to know how to configure
 your prefix/suffix.
 
 ### Example
@@ -29,7 +31,10 @@ your prefix/suffix.
   "rules": {},
   "settings": {
     "import/resolver": {
-      "babel-root-import": {}
+        "babel-plugin-root-import": {
+            "rootPathSuffix": "src",
+            "rootPathPrefix": "~"
+        }
     }
   }
 }
@@ -40,4 +45,4 @@ your prefix/suffix.
 MIT, see [LICENSE.md](/LICENSE.md) for details.
 
 
-[babel-root-import]: https://github.com/michaelzoidl/babel-root-import
+[babel-plugin-root-import]: https://github.com/entwicklerstube/babel-plugin-root-import
