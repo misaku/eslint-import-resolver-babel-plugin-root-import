@@ -1,8 +1,8 @@
 # eslint-import-resolver-babel-plugin-root-import
 
-This project fork from [olalonde/eslint-import-resolver-babel-root-import](https://github.com/olalonde/eslint-import-resolver-babel-root-import)
+This project fork from [olalonde/eslint-import-resolver-babel-root-import](https://github.com/olalonde/eslint-import-resolver-babel-root-import).
 
-A [babel-plugin-root-import](https://github.com/entwicklerstube/babel-plugin-root-import).
+A [babel-plugin-root-import](https://github.com/entwicklerstube/babel-plugin-root-import)
 resolver for [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import).
 
 ## Installation
