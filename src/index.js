@@ -83,7 +83,7 @@ exports.resolve = (source, file, config, babelrc) => {
 
             let suffix = '';
             if (option.rootPathSuffix && typeof option.rootPathSuffix === 'string') {
-                suffix = `/${option.rootPathSuffix.replace(/^(\/)|(\/)$/g, '')}`;
+                suffix = `${option.rootPathSuffix.replace(/^(\/)|(\/)$/g, '')}`;
             }
 
             rootPathConfig.push({
@@ -99,7 +99,7 @@ exports.resolve = (source, file, config, babelrc) => {
 
         let rootPathSuffix = '';
         if (opts.rootPathSuffix && typeof opts.rootPathSuffix === 'string') {
-            rootPathSuffix = `/${opts.rootPathSuffix.replace(/^(\/)|(\/)$/g, '')}`;
+            rootPathSuffix = `${opts.rootPathSuffix.replace(/^(\/)|(\/)$/g, '')}`;
         }
 
         rootPathConfig.push({
@@ -114,7 +114,7 @@ exports.resolve = (source, file, config, babelrc) => {
         const prefix = option.rootPathPrefix;
         const suffix = option.rootPathSuffix;
         if (hasRootPathPrefixInString(source, option.rootPathPrefix)) {
-            transformedSource = transformRelativeToRootPath(source, suffix, prefix);
+            transformedSource = transformRelativeToRootPath(source, suffix, prefix, file);
             break;
         }
     }
