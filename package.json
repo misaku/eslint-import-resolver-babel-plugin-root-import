@@ -1,11 +1,11 @@
 {
   "name": "eslint-import-resolver-babel-plugin-root-import",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "src/index.js",
   "description": "babel-plugin-root-import resolver for eslint-plugin-import",
   "repository": {
     "type": "git",
-    "url": "https://github.com/olalonde/eslint-import-resolver-babel-root-import.git"
+    "url": "https://github.com/bingqichen/eslint-import-resolver-babel-plugin-root-import.git"
   },
   "author": {
     "name": "Olivier Lalonde",
