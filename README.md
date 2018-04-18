@@ -8,7 +8,7 @@ A [babel-plugin-root-import](https://github.com/entwicklerstube/babel-plugin-roo
 
 This project has been transferred to [eslint-import-resolver-babel-plugin-root-import](https://github.com/unconfident/eslint-import-resolver-babel-plugin-root-import).
 
-See [issuse#14](https://github.com/olalonde/eslint-import-resolver-babel-root-import/issues/14) for details.
+See [issues#14](https://github.com/olalonde/eslint-import-resolver-babel-root-import/issues/14) for details.
 
 ## Installation
 
