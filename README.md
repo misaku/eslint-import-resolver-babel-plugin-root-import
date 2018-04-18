@@ -6,7 +6,7 @@ A [babel-plugin-root-import](https://github.com/entwicklerstube/babel-plugin-roo
 
 ## ⚠️ Warning
 
-This project has been transferred to [eslint-import-resolver-babel-plugin-root-import](https://github.com/unconfident/eslint-import-resolver-babel-plugin-root-import).
+This project has been transferred to [unconfident/eslint-import-resolver-babel-plugin-root-import](https://github.com/unconfident/eslint-import-resolver-babel-plugin-root-import).
 
 See [issues#14](https://github.com/olalonde/eslint-import-resolver-babel-root-import/issues/14) for details.
 
