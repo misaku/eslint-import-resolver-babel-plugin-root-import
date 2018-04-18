@@ -4,7 +4,7 @@ This project fork from [olalonde/eslint-import-resolver-babel-root-import](https
 
 A [babel-plugin-root-import](https://github.com/entwicklerstube/babel-plugin-root-import) resolver for [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import).
 
-## 2018-04-18
+## ⚠️Warning
 
 This project has been transferred to [eslint-import-resolver-babel-plugin-root-import](https://github.com/unconfident/eslint-import-resolver-babel-plugin-root-import).
 
